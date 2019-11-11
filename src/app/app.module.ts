@@ -6,12 +6,18 @@ import { HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
+import { AssignmentOneComponent} from './AssignmentOne/assignmentOne.component';
+import { SuccessAlertComponent } from './AssignmentOne/successAlert.component';
+import { WarningAlertComponent } from './AssignmentOne/warningAlert.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
-    ServersComponent//have to register newly created component
+    ServersComponent,
+    AssignmentOneComponent,
+    SuccessAlertComponent,
+    WarningAlertComponent
   ],
   imports: [
     BrowserModule,
