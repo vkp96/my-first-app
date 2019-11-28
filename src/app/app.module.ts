@@ -11,6 +11,10 @@ import { SuccessAlertComponent } from './AssignmentOne/successAlert.component';
 import { WarningAlertComponent } from './AssignmentOne/warningAlert.component';
 import { AssignmentTwoComponent } from './assignment-two/assignment-two.component';
 import { AssignmentThreeComponent } from './assignment-three/assignment-three.component';
+import { AssignmentFourComponent } from './assignment-four/assignment-four.component';
+import { GameComponent } from './assignment-four/game/game.component';
+import { OddComponent } from './assignment-four/odd/odd.component';
+import { EvenComponent } from './assignment-four/even/even.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { AssignmentThreeComponent } from './assignment-three/assignment-three.co
     SuccessAlertComponent,
     WarningAlertComponent,
     AssignmentTwoComponent,
-    AssignmentThreeComponent
+    AssignmentThreeComponent,
+    AssignmentFourComponent,
+    GameComponent,
+    OddComponent,
+    EvenComponent
   ],
   imports: [
     BrowserModule,
