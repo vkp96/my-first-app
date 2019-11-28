@@ -1,0 +1,10 @@
+<button class="btn btn-primary" (click)="onClick()">Display Details!</button>
+<div>
+    <p *ngIf="showParagraph">assignment-three on directives works!</p>
+</div>
+<div>
+    <p *ngFor="let counter of count; let i = index"
+    [ngStyle] = "{backgroundColor: i >= 4 ?  'blue' : 'transparent'}"
+    [ngClass] = "{'logItem': i >=  4}" >logItem on Timestamp: {{ counter }}</p>
+</div>
+

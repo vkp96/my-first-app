@@ -1,0 +1,7 @@
+<label>Username</label>
+<input type="text" class="form-control"
+(input)="onUpdateInput($event)">
+<!--<input type="text" class="form-control"
+[(ngModel)]="username">-->
+<button class="btn btn-primary" [disabled]="isDisabled" (click)="onClick()">Button</button>
+<p>{{ username }}</p>
