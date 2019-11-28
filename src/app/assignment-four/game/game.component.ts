@@ -26,5 +26,4 @@ export class GameComponent implements OnInit {
     clearInterval(this.interval);
     //this.index = 1;
   }
-
 }
