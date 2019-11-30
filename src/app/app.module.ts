@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -20,6 +20,7 @@ import { ActiveUsersComponent } from './assignment-five/active-users/active-user
 import { InactiveUsersComponent } from './assignment-five/inactive-users/inactive-users.component';
 import { CountService } from './assignment-five/count-service';
 import { AssignmentSixComponent } from './assignment-six/assignment-six.component';
+import { AssignmentSevenComponent } from './assignment-seven/assignment-seven.component';
 
 @NgModule({
   declarations: [
@@ -38,12 +39,14 @@ import { AssignmentSixComponent } from './assignment-six/assignment-six.componen
     AssignmentFiveComponent,
     ActiveUsersComponent,
     InactiveUsersComponent,
-    AssignmentSixComponent
+    AssignmentSixComponent,
+    AssignmentSevenComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [CountService],
   bootstrap: [AppComponent]
