@@ -21,6 +21,9 @@ import { InactiveUsersComponent } from './assignment-five/inactive-users/inactiv
 import { CountService } from './assignment-five/count-service';
 import { AssignmentSixComponent } from './assignment-six/assignment-six.component';
 import { AssignmentSevenComponent } from './assignment-seven/assignment-seven.component';
+import { AssignmentEightComponent } from './assignment-eight/assignment-eight.component';
+import { ReversePipe } from './assignment-eight/reverse-pipe.pipe';
+import { SortPipe } from './assignment-eight/sort.pipe';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { AssignmentSevenComponent } from './assignment-seven/assignment-seven.co
     ActiveUsersComponent,
     InactiveUsersComponent,
     AssignmentSixComponent,
-    AssignmentSevenComponent
+    AssignmentSevenComponent,
+    AssignmentEightComponent,
+    ReversePipe,
+    SortPipe
   ],
   imports: [
     BrowserModule,
