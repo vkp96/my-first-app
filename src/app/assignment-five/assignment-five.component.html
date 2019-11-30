@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+           <app-active-users></app-active-users>
+            <app-inactive-users></app-inactive-users>
+        </div>
+    </div>
+    <div class="row">
+        <h4 *ngIf="countService.count !== 0">Count of clicks: {{ countService.clickCounts }}</h4>
+    </div>
+</div>      

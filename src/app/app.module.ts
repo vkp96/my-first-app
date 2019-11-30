@@ -15,6 +15,11 @@ import { AssignmentFourComponent } from './assignment-four/assignment-four.compo
 import { GameComponent } from './assignment-four/game/game.component';
 import { OddComponent } from './assignment-four/odd/odd.component';
 import { EvenComponent } from './assignment-four/even/even.component';
+import { AssignmentFiveComponent } from './assignment-five/assignment-five.component';
+import { ActiveUsersComponent } from './assignment-five/active-users/active-users.component';
+import { InactiveUsersComponent } from './assignment-five/inactive-users/inactive-users.component';
+import { CountService } from './assignment-five/count-service';
+import { AssignmentSixComponent } from './assignment-six/assignment-six.component';
 
 @NgModule({
   declarations: [
@@ -29,14 +34,18 @@ import { EvenComponent } from './assignment-four/even/even.component';
     AssignmentFourComponent,
     GameComponent,
     OddComponent,
-    EvenComponent
+    EvenComponent,
+    AssignmentFiveComponent,
+    ActiveUsersComponent,
+    InactiveUsersComponent,
+    AssignmentSixComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [CountService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
